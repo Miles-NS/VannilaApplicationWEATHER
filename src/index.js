@@ -20,6 +20,28 @@ function formatDate(timeStamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function dailyForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class= "row">`;
+  let days = ["Thurs", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col">
+      <div class="weather-forcast-date">${day}</div>
+      <img src="" />
+      <div class="weather-forcast-temperature">
+        <span class="temperature-max">24/</span>
+        <span class="Temperature-min">10</span>
+      </div>
+    </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   let cityElement = document.querySelector("h1");

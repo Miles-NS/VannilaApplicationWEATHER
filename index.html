@@ -19,21 +19,19 @@
       <div class="weatherBox">
         <div class="row">
           <div class="col-4">
-            <h1>Manzini</h1>
+            <h1></h1>
             <br />
             <img src id="icon" />
             <br />
-            <div id="temperature">
-              <strong><span id="current-temp">68</span></strong>
-              <a href="#" id="fahrenheit-link"> F˚</a>|<a
-                href="#"
-                id="celsius-link"
-              >
-                C˚</a
-              >
-            </div>
+            <strong><span id="current-temp"></span></strong>
+            <a href="#" id="fahrenheit-link"> F˚</a>|<a
+              href="#"
+              id="celsius-link"
+            >
+              C˚</a
+            >
             <br />
-            <span id="description">clear</span>
+            <span id="description"></span>
           </div>
           <div class="col-8">
             <form>
@@ -42,45 +40,15 @@
                 placeholder="Type City"
                 id="search-text-input"
               />
-              <input type="submit" value="search" />
+              <input type="submit" id="search-button" value="search" />
             </form>
-            <h2>Monday</h2>
-            <ul>
-              <li>Humidity: <span id="humidity">68</span> %</li>
-              <li>Wind: <span id="wind">7</span> mph</li>
-            </ul>
-            <div class="row">
-              <div class="col">
-                Tue
-                <br />
-                🌧
-              </div>
-              <div class="col">
-                Wed
-                <br />
-                ⛅
-              </div>
-              <div class="col">
-                Thurs
-                <br />
-                ☀
-              </div>
-              <div class="col">
-                Fri
-                <br />
-                ☀
-              </div>
-              <div class="col">
-                Sat
-                <br />
-                🌦
-              </div>
-              <div class="col">
-                Sun
-                <br />
-                🌧
-              </div>
-            </div>
+            <h2></h2>
+            <p>
+              Humidity:<span id="humidity"></span> %
+              <br />
+              Wind:<span id="wind"></span> mph
+            </p>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
       </div>

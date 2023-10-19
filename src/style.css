@@ -4,6 +4,12 @@
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  );
 }
 .sourceCode {
   text-align: center;
@@ -12,12 +18,10 @@
 .icon {
   font-size: 50px;
 }
-.current-temp {
-  font-size: 20px;
-}
-.temperature {
-  text-align: center;
-}
-ul {
-  list-style: none;
+p,
+h1,
+h2,
+.current-temp,
+.description {
+  color: #113f67;
 }
