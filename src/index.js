@@ -29,7 +29,7 @@ function formartDay(timestamp) {
   return days[day];
 }
 
-function dailyForecast() {
+function dailyForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.daily;
 
@@ -40,11 +40,15 @@ function dailyForecast() {
       forecastHTML +
       `
     <div class="col">
-      <div class="weather-forcast-date">${forecastDay.time}</div>
+      <div class="weather-forcast-date">${formartDay(forecastDay.time)}</div>
       <img src="${forecastDay.daily.icon_url}" />
       <div class="weather-forcast-temperature">
-        <span class="temperature-max">${forecastDay.temperature.maximum}/</span>
-        <span class="Temperature-min">${forecastDay.temperature.minimum}</span>
+        <span class="temperature-max">${Math.round(
+          forecastDay.temperature.maximum
+        )}/</span>
+        <span class="Temperature-min">${Math.round(
+          forecastDay.temperature.minimum
+        )}</span>
       </div>
     </div>
   `;
