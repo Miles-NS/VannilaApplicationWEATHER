@@ -1,5 +1,5 @@
 .weatherBox {
-  border: 1px solid gray;
+  border: transparent;
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
@@ -10,18 +10,34 @@
     rgb(255, 255, 255) 0%,
     rgb(215, 223, 252) 84%
   );
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.2);
 }
 .sourceCode {
   text-align: center;
 }
-
-.icon {
-  font-size: 50px;
+#celsius-link,
+#fahrenheit-link,
+a {
+  text-decoration: none;
 }
 p,
-h1,
-h2,
-.current-temp,
-.description {
+#current-temp,
+#description {
   color: #113f67;
+}
+#search-button {
+  background-color: #113f67;
+  border-radius: 30px;
+  color: aliceblue;
+  border: transparent;
+  padding: 10px 20px;
+  opacity: 0.5;
+}
+#search-text-input {
+  color: aliceblue;
+  background-color: #5c9bdb;
+  padding: 10px;
+  border: #113f67;
+  border-radius: 30px;
+  opacity: 0.5;
 }
